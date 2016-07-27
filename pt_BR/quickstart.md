@@ -274,7 +274,7 @@ Estamos prontos para adicionar algum código em nossa rota `POST /task`, que ir�
 
 Agora que temos um formulário em nossa visão, precisamos adicionar código em nossa rota `POST /task` para validar o formulário de entrada e criar uma nova tarefa. Primeiro, vamos validar o formulário de entrada.
 
-Para este formulário, vamos fazer o campo `name` obrigatório e declarar que tal campo precisa ter manos que `255` caracteres. Se a validação falhar, iremos redirecionar o usuário para a URL `/`, e armazenar temporariamente na [sessão](/docs/{{version}}/session) os dados inseridos no input e os erros:
+Para este formulário, vamos fazer o campo `name` obrigatório e declarar que tal campo precisa ter menos que `255` caracteres. Se a validação falhar, iremos redirecionar o usuário para a URL `/`, e armazenar temporariamente na [sessão](/docs/{{version}}/session) os dados inseridos no input e os erros:
 
 	Route::post('/task', function (Request $request) {
 		$validator = Validator::make($request->all(), [
