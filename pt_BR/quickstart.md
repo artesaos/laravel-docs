@@ -437,7 +437,7 @@ Podemos falsificar a requisição `DELETE` inserindo o resultado da função `me
 <a name="deleting-the-task"></a>
 ### Apagando a Tarefa
 
-Finalmente, vamos adicionar a lógica à nossa rota para realmente apagar a tarefa. Podemo utilizar o método `findOrFail` do Eloquent para obter um modelo pelo seu ID ou lançar um exceção caso o modelo não exista. Uma vez que o modelo foi obtido, usaremos o método `delete` para apagar o registro. Quando o registro for apagado, redirecionaremos o usuário para a URL `/`:
+Finalmente, vamos adicionar a lógica à nossa rota para realmente apagar a tarefa. Podemos utilizar o método `findOrFail` do Eloquent para obter um modelo pelo seu ID ou lançar um exceção caso o modelo não exista. Uma vez que o modelo foi obtido, usaremos o método `delete` para apagar o registro. Quando o registro for apagado, redirecionaremos o usuário para a URL `/`:
 
 	Route::delete('/task/{id}', function ($id) {
 		Task::findOrFail($id)->delete();
