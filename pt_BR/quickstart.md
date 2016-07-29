@@ -274,7 +274,7 @@ Estamos prontos para adicionar algum código em nossa rota `POST /task`, que ir�
 
 Agora que temos um formulário em nossa visão, precisamos adicionar código em nossa rota `POST /task` para validar o formulário de entrada e criar uma nova tarefa. Primeiro, vamos validar o formulário de entrada.
 
-Para este formulário, vamos fazer o campo `name` obrigatório e declarar que tal campo precisa ter manos que `255` caracteres. Se a validação falhar, iremos redirecionar o usuário para a URL `/`, e armazenar temporariamente na [sessão](/docs/{{version}}/session) os dados inseridos no input e os erros:
+Para este formulário, vamos fazer o campo `name` obrigatório e declarar que tal campo precisa ter menos que `255` caracteres. Se a validação falhar, iremos redirecionar o usuário para a URL `/`, e armazenar temporariamente na [sessão](/docs/{{version}}/session) os dados inseridos no input e os erros:
 
 	Route::post('/task', function (Request $request) {
 		$validator = Validator::make($request->all(), [
@@ -437,7 +437,7 @@ Podemos falsificar a requisição `DELETE` inserindo o resultado da função `me
 <a name="deleting-the-task"></a>
 ### Apagando a Tarefa
 
-Finalmente, vamos adicionar a lógica à nossa rota para realmente apagar a tarefa. Podemo utilizar o método `findOrFail` do Eloquent para obter um modelo pelo seu ID ou lançar um exceção caso o modelo não exista. Uma vez que o modelo foi obtido, usaremos o método `delete` para apagar o registro. Quando o registro for apagado, redirecionaremos o usuário para a URL `/`:
+Finalmente, vamos adicionar a lógica à nossa rota para realmente apagar a tarefa. Podemos utilizar o método `findOrFail` do Eloquent para obter um modelo pelo seu ID ou lançar um exceção caso o modelo não exista. Uma vez que o modelo foi obtido, usaremos o método `delete` para apagar o registro. Quando o registro for apagado, redirecionaremos o usuário para a URL `/`:
 
 	Route::delete('/task/{id}', function ($id) {
 		Task::findOrFail($id)->delete();
