@@ -102,7 +102,7 @@ Entretanto, é mais conveniente especificar o middleware no construtor do contro
 
 Resource controller torna menos dolorosa a construção de recursos RESTful. Por exemplo, você pode querer criar um controller que recebe requisições HTTP para armazenar fotos. Usando o comando Artisan `make:controller` você pode rapidamente criar esse controller:
 
-	php artisan make:controller PhotoController
+	php artisan make:controller PhotoController --resource
 
 O comando Artisan ira gerar um arquivo controller em `app/Http/Controllers/PhotoController.php`. O controller conterá métodos para cada operação disponvível para o recurso (resource).
 
