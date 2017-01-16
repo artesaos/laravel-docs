@@ -56,7 +56,7 @@ Tenha em mente que a maioria dos métodos de resposta são encadeados, permitind
 <a name="attaching-cookies-to-responses"></a>
 #### Colocando Cookies nas Respostas
 
-O método `withCookie` da instância da resposta permite você facilmente colocar cookies nas respostas. Por exemplo, you poderá usar o método `withCookie` para gerar um Cookie e colocá-lo na resposta:
+O método `withCookie` da instância da resposta permite você facilmente colocar cookies nas respostas. Por exemplo, você pode usar o método `withCookie` para gerar um Cookie e colocá-lo na resposta:
 
     return response($content)->header('Content-Type', $type)
                      ->withCookie('nome', 'valor');
@@ -179,7 +179,7 @@ Claro, após o usuário ser redirecionando para uma nova página, você poderá 
 <a name="response-macros"></a>
 ## Respostas customizadas (Macros)
 
-Se você gostaria de definir respostas customizadas que poderá ser reutilizada em uma variedade e rota e controllers, você poderá usar o método `macro` de uma implementação de `Illuminate\Contracts\Routing\ResponseFactory`.
+Se você gostaria de definir respostas customizadas que poderá ser reutilizada em uma variedade de rotas e controllers, você poderá usar o método `macro` de uma implementação de `Illuminate\Contracts\Routing\ResponseFactory`.
 
 Por Exemplo, no método `boot` do [service provider](/docs/{{version}}/providers):
 
