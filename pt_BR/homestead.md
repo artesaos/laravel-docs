@@ -15,9 +15,9 @@
 <a name="introduction"></a>
 ## Introdução
 
-O Laravel tenta fazer sua experiência em desenvolver aplicações PHP prazeirosa, incluindo seu ambiente de desenvolvimento Local. O [Vagrant](http://vagrantup.com) provê uma maneira simples e elegante de gerenciar e provisionar Máquinas Virtuais.
+O Laravel tenta fazer sua experiência em desenvolver aplicações PHP prazerosa, incluindo seu ambiente de desenvolvimento Local. O [Vagrant](http://vagrantup.com) provê uma maneira simples e elegante de gerenciar e provisionar Máquinas Virtuais.
 
-O Laravel Homestead é uma pré-empacotada Vagrant Box oficial que provê a você um ambiente de desenvolvimento maravilhoso que não obriga vocÊ a ter de instalar PHP, HHVM, um servidor Web e outros softwares na sua máquina local. Não precisa mais se preocupar em bagunçar seu sistema operacional! As Vagrant Box são completamente desacopladas do seu sitema operacional. Se algo der errado, você pode destruir e recriar uma nova Homestead em minutos!
+O Laravel Homestead é uma pré-empacotada Vagrant Box oficial que provê a você um ambiente de desenvolvimento maravilhoso que não obriga você a ter de instalar PHP, HHVM, um servidor Web e outros softwares na sua máquina local. Não precisa mais se preocupar em bagunçar seu sistema operacional! As Vagrant Box são completamente desacopladas do seu sitema operacional. Se algo der errado, você pode destruir e recriar uma nova Homestead em minutos!
 
 Homestead pode ser executado em sistemas Windows, Mac e Linux e inclui o servidor Web Nginx, PHP 5.6, Postgres, MySQL, Redis, Memcached, Node e todas as outras coisas que você precisa para desenvolver aplicações Laravel impressionantes.
 
@@ -49,7 +49,7 @@ Homestead é atualmente construido e testado usando Vagrant 1.7.
 
 Antes de executar seu ambiente Homestead, você precisa instalar o [VirtualBox](https://www.virtualbox.org/wiki/Downloads) ou [VMWare](http://www.vmware.com) e também o [Vagrant](http://www.vagrantup.com/downloads.html). Todos esses softwares e pacotes disponibilizam instaladores visuais fáceis de usar para os sistemas operacionais mais populares.
 
-Para usar o VMware, vocÊ precisa comprar o VMware Fusion/Desktop e o [VMware Vagrant plug-in](http://www.vagrantup.com/vmware). O WMware tem a melhor performance com pastas compartilhadas pronta para uso.
+Para usar o VMware, você precisa comprar o VMware Fusion/Desktop e o [VMware Vagrant plug-in](http://www.vagrantup.com/vmware). O WMware tem a melhor performance com pastas compartilhadas pronta para uso.
 
 #### Instalando a Homestead Vagrant Box
 
@@ -92,7 +92,7 @@ Depois de criar suas chaves SSH, você deve especificar o caminho da sua chave p
 
 #### Configurando Pastas Compartilhadas
 
-A propriedade `folders` do arquivo `Homestead.yaml` lista todas as pastas que vocÊ gostaria de compartilhar com o seu ambiente Homestead. Quando os arquivos nessas pastas forem modificados, eles serão sincronizados entre sua máquina local e o ambiente Homestead. Você pode configurar quantas pastas você achar necessário:
+A propriedade `folders` do arquivo `Homestead.yaml` lista todas as pastas que você gostaria de compartilhar com o seu ambiente Homestead. Quando os arquivos nessas pastas forem modificados, eles serão sincronizados entre sua máquina local e o ambiente Homestead. Você pode configurar quantas pastas você achar necessário:
 
 	folders:
 	    - map: ~/Code
@@ -107,7 +107,7 @@ Para ativar o [NFS](http://docs.vagrantup.com/v2/synced-folders/nfs.html), você
 
 #### Configurando Sites Nginx
 
-Não está familiarizado com o Nginx? Não tem problema. A propriedade `sites` permite a você facilmente mapear um "domínio" para uma pasta dentro do ambiente Homestead. Um exemplo de configuração está no `Homestead.yaml`. E novamente, vocÊ pode adicionar quantos sites você precisar no ambiente Homestead. O Homestead serve como um conveniente e virtualizado ambiente para cada projeto Laravel que você está trabalhando:
+Não está familiarizado com o Nginx? Não tem problema. A propriedade `sites` permite a você facilmente mapear um "domínio" para uma pasta dentro do ambiente Homestead. Um exemplo de configuração está no `Homestead.yaml`. E novamente, você pode adicionar quantos sites você precisar no ambiente Homestead. O Homestead serve como um conveniente e virtualizado ambiente para cada projeto Laravel que você está trabalhando:
 
 	sites:
 	    - map: homestead.app
@@ -137,7 +137,7 @@ Certifique-se de que o endereço IP listado é o mesmo que está no seu arquivo 
 
 Depois de editar o arquivo `Homestead.yaml` ao seu gosto, execute o comando `vagrant up` a partir do seu diretório Homestead. Você iniciará a máquina virtual e automaticamente configurar suas pastas compartilhadas e sites Nginx.
 
-Para destuir sua máquina, você pode usar o comando `vagrant destroy --force`.
+Para destruir sua máquina, você pode usar o comando `vagrant destroy --force`.
 
 <a name="daily-usage"></a>
 ## Uso Diário
@@ -203,4 +203,4 @@ Todos os pacotes apropriados já vem instalados na sua Homestead Box, você só 
 	      client-id: your-client-id
 	      client-token: your-client-token
 
-Depois de configurar as credenciais do Blackfire , re-provisione sua box usando o ocmando `vagrant provision` a partir do diretório do Homestead. E é claro, esteja seguro de revisar a [Documentação do Blackfire](https://blackfire.io/getting-started) para aprender a como isntalar extensões do Blackfire para seu navegador web.
+Depois de configurar as credenciais do Blackfire , re-provisione sua box usando o comando `vagrant provision` a partir do diretório do Homestead. E é claro, esteja seguro de revisar a [Documentação do Blackfire](https://blackfire.io/getting-started) para aprender a como isntalar extensões do Blackfire para seu navegador web.
