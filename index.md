@@ -27,7 +27,7 @@
     - [Facades](/docs/{{version}}/facades)
 - Serviços
     - [Autenticação](/docs/{{version}}/authentication)
-    - [Artisan Console](/pt_BR/artisan.md)
+    - [Artisan Console](pt_BR/artisan.md)
     - [Billing (Faturamento)](/docs/{{version}}/billing)
     - [Cache](/docs/{{version}}/cache)
     - [Coleções](/docs/{{version}}/collections)
