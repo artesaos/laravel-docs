@@ -1,8 +1,8 @@
 # Tradução do Laravel Docs
 
 - Prólogo
-    - [Notas de Atualização](/docs/{{version}}/releases)
-    - [Guia de Atualização](/docs/{{version}}/upgrade)
+    - ![](assets/usa.png) [Notas de Atualização](/releases.md) 
+    - ![](assets/br.png) [Guia de Atualização](pt_BR/upgrade.md)
     - [Guia de Contribuição](/docs/{{version}}/contributions)
 - Configuração
     - [Instalação](/docs/{{version}}/installation)
@@ -27,7 +27,7 @@
     - [Facades](/docs/{{version}}/facades)
 - Serviços
     - [Autenticação](/docs/{{version}}/authentication)
-    - [Artisan Console](pt_BR/artisan.md)
+    - [Artisan Console](pt_x'BR/artisan.md)
     - [Billing (Faturamento)](/docs/{{version}}/billing)
     - [Cache](/docs/{{version}}/cache)
     - [Coleções](/docs/{{version}}/collections)
