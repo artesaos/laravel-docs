@@ -1,8 +1,8 @@
 # Tradução do Laravel Docs
 
 - Prólogo
-    - ![](assets/usa.png) [Notas de Atualização](/releases.md) 
-    - ![](assets/br.png) [Guia de Atualização](pt_BR/upgrade.md)
+    - <img src="assets/usa.png" align="left"/> [Notas de Atualização](/releases.md) 
+    - <img src="assets/br.png" align="left"/> [Guia de Atualização](pt_BR/upgrade.md)
     - [Guia de Contribuição](/docs/{{version}}/contributions)
 - Configuração
     - [Instalação](/docs/{{version}}/installation)
